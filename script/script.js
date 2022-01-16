@@ -7,15 +7,21 @@ let addMessage = document.querySelector('.message'),
 
 let todoList = [];
 
-addButton.addEventListener('clik', function () {
+addButton.addEventListener('clik',function(){
 
   let newTodo = {
     todo: addMessage.value,
     checked: false,
     important: false
-  }
+  };
 
   todoList.push(newTodo);
-  console.log(todoList);
+  displayMessages();
 
 });
+
+function displayMessages() {
+  todoList.forEach(function (item, i) {
+    let displayMessages = `Наше дело: ${addMessage.value}`
+  });
+}
