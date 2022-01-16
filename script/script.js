@@ -25,3 +25,5 @@ function displayMessages() {
     let displayMessages = `Наше дело: ${addMessage.value}`
   });
 }
+console.log('massa')
+console.time('444.444')
